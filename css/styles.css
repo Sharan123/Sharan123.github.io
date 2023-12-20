@@ -163,7 +163,7 @@ main {
 
 .layer-4 {
     position: absolute;
-    z-index: 9;
+    z-index: 11;
     width: 400px;
     top: calc(50% + 280px );
     left: calc(50% - 620px);
@@ -172,7 +172,7 @@ main {
 
 .layer-5 {
     position: absolute;
-    z-index: 10;
+    z-index: 12;
     width: 400px;
     top: calc(50% + 290px);
     left: calc(50% + 500px);
@@ -245,7 +245,7 @@ main {
 
 #github-text {
     position: absolute;
-    z-index: 4;
+    z-index: 9;
     width: 15%;
     transform: translate(-50%, -50%);
     top: calc(50% + 350px);
@@ -280,6 +280,129 @@ main {
 #github-text h2 a:visited,
 #github-text h2 a:hover,
 #github-text h2 a:active {
+    color: transparent;
+}
+
+#template-text {
+    visibility: hidden;
+    pointer-events: none; /* These two are ensuring it is invisible and a placeholder for future, eventual blog url */
+    position: absolute;
+    z-index: 4;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 100px);
+    left: calc(50% + 150px);
+    text-align: left;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#template-text h2{
+    background-image: url('../imgs/red_giant_smooth.gif');
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 0.88;
+    backdrop-filter: blur(3px);
+}
+
+#template-text h2 a{
+    text-decoration: none;
+}
+
+#template-text h2 a:link,
+#template-text h2 a:visited,
+#template-text h2 a:hover,
+#template-text h2 a:active {
+    color: transparent;
+}
+
+#timeline-text {
+    position: absolute;
+    z-index: 5;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 100px);
+    left: calc(50% + 700px);
+    text-align: left;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#timeline-text h2{
+    background-image: url('../imgs/red_giant_smooth.gif');
+    background-position: right;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 0.88;
+    backdrop-filter: blur(3px);
+}
+
+#timeline-text h2 a{
+    text-decoration: none;
+}
+
+
+#timeline-text h2 a:link,
+#timeline-text h2 a:visited,
+#timeline-text h2 a:hover,
+#timeline-text h2 a:active {
+    color: transparent;
+}
+
+#publications-text {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 350px);
+    left: calc(50% + 750px);
+    text-align: left;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#publications-text h2{
+    background-image: url('../imgs/red_giant_smooth.gif');
+    background-position: left;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 0.88;
+    backdrop-filter: blur(3px);
+}
+
+#publications-text h2 a{
+    text-decoration: none;
+}
+
+#publications-text h2 a:link,
+#publications-text h2 a:visited,
+#publications-text h2 a:hover,
+#publications-text h2 a:active {
     color: transparent;
 }
 
