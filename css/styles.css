@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+    background-color: #0f0b36bb;
+}
+
+.logo{
+    width: 7.8125%;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav{
+    /*background-color: red;*/
+    max-width: 93.75%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.fa-magnifying-glass{
+    color: gold;
+    background-color: rgba(34, 33, 38, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+.search a{
+    font-size: 1.5rem;
+    padding: 0 3rem;
+}
+
+.hamburger{
+    padding-left: 1.5rem;
+}
+
+.hamburger a{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar{
+    position: relative;
+    width: 52%;
+    height: 1.7px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before, 
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1.7px;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.hamburger .bar::before {
+    top: -6.5px;
+}
+
+.hamburger .bar::after {
+    top: 6.5px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.no-transition{
+    transition: none !important;
+}
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.21,.55,.24,.99);
+    /*transform: translate(-50%, -50%);*/
+}
+
+.bg-img {
+    position: absolute;
+    width: 197.916667%;
+    top: calc(50% - 380px);
+    left: calc(50%);
+    z-index: 1;
+}
+
+.layer-1 {
+    position: absolute;
+    z-index: 6;
+    width: 400px;
+    top: calc(50% + 40px);
+    left: calc(50% - 600px);
+    mask-image: radial-gradient(circle at center, black 50%, transparent 75%, transparent 100%);
+}
+
+.layer-2 {
+    position: absolute;
+    z-index: 7;
+    width: 400px;
+    top: calc(50%);
+    left: calc(50% + 520px);
+    transform: translate(-50%, -50%);
+    mask-image: radial-gradient(circle at center, black 45%, transparent 65%, transparent 100%);
+}
+
+.layer-3 {
+    position: absolute;
+    z-index: 8;
+    width: 400px;
+    top: calc(50% + 200px);
+    left: calc(50% + 10px);
+    mask-image: radial-gradient(circle at center, black 50%, transparent 65%, transparent 100%);
+}
+
+.layer-4 {
+    position: absolute;
+    z-index: 9;
+    width: 400px;
+    top: calc(50% + 280px );
+    left: calc(50% - 620px);
+    mask-image: radial-gradient(circle at center, black 50%, transparent 65%, transparent 100%);
+}
+
+.layer-5 {
+    position: absolute;
+    z-index: 10;
+    width: 400px;
+    top: calc(50% + 290px);
+    left: calc(50% + 500px);
+    mask-image: radial-gradient(circle at center, black 45%, transparent 80%, transparent 100%);
+}
+
+#name-text {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: calc(50% - 150px);
+    left: calc(50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#name-text h2{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+}
+
+#name-text h1{
+    font-weight: 200;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+
+#projects-text {
+    position: absolute;
+    z-index: 3;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 100px);
+    left: calc(50% - 360px);
+    text-align: left;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#projects-text h2{
+    background-image: url('../imgs/red_giant_smooth.gif');
+    background-position: left;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 0.88;
+    backdrop-filter: blur(3px);
+}
+
+#projects-text h2 a{
+    text-decoration: none;
+}
+
+#projects-text h2 a:link, 
+#projects-text h2 a:visited, 
+#projects-text h2 a:hover,
+#projects-text h2 a:active {
+    color: transparent;
+}
+
+#github-text {
+    position: absolute;
+    z-index: 4;
+    width: 15%;
+    transform: translate(-50%, -50%);
+    top: calc(50% + 350px);
+    left: calc(50% - 360px);
+    text-align: left;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+#github-text h2{
+    background-image: url('../imgs/red_giant_smooth.gif');
+    background-position: right;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 0.88;
+    backdrop-filter: blur(3px);
+}
+
+#github-text h2 a{
+    text-decoration: none;
+}
+
+#github-text h2 a:link,
+#github-text h2 a:visited,
+#github-text h2 a:hover,
+#github-text h2 a:active {
+    color: transparent;
+}
+
+.vignette{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
+    pointer-events: none;
+}

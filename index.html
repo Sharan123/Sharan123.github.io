@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="imgs/BgImg169_upscayl_4x_compressed.png" as="image">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imgs/LogoDanielSaranovic.png" alt="DanielSaranovic" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="search"><a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a></li>
+                <li class="hamburger">
+                    <a href="#">
+                        <div class="bar"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="vignette"></div>
+        <img src="imgs/BgImg169_upscayl_4x_compressed.png" class="parallax bg-img" data-speedx="0.3" data-speedy="0.38" data-speedz="0" data-rotation="0" data-distance="0">
+        <div class="text parallax" id="name-text" data-speedx="0.27" data-speedy="0.305" data-speedz="0" data-rotation="0" data-distance="-200">
+            <h1>Daniel Saranovic</h1>
+            <h2>ML Research Scientist</h2>
+        </div>
+        <div class="text" id="projects-text" data-distance="-400">
+            <h2><a href="projects.html">Projects</a></h2>
+        </div>
+        <div class="text" id="github-text" data-distance="-800">
+            <h2><a href="https://github.com/Sharan123" target="_blank">Github</a></h2>
+        </div>
+        <img src="imgs/layer1_bg.png" data-speedx="0.25" data-speedy="0.155" data-speedz="0.07" class="parallax layer-1" data-rotation="0.02" data-distance="-100">
+        <img src="imgs/layer2new_bg.png" data-speedx="0.125" data-speedy="0.11" data-speedz="0.13" class="parallax layer-2" data-rotation="0.02" data-distance="-300">
+        <img src="imgs/layer3_bg.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0.20" class="parallax layer-3" data-rotation="0.09" data-distance="-100">
+        <img src="imgs/layer1_bg.png" data-speedx="0.07" data-speedy="0.05" data-speedz="0.25" class="parallax layer-4" data-rotation="0.11" data-distance="800">
+        <img src="imgs/layer2new_bg.png" data-speedx="0.065" data-speedy="0.024" data-speedz="0.32" class="parallax layer-5" data-rotation="0.14" data-distance="1000">
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
